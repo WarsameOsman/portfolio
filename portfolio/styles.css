@@ -1,0 +1,174 @@
+/* Common styles for all devices */
+body {
+    background-color: #1e1e1e;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 5px; /* Added padding on the sides for better readability */
+    box-sizing: border-box;
+}
+
+header {
+    padding: 50px 20px; /* Increased padding for the header */
+    background-color: #1e1e1e;
+    color: #fff;
+    position: relative; /* Relative position for stacking content below the fixed navbar */
+    z-index: 1; /* Ensure the header is above other elements */
+}
+
+h1, h2, h3 {
+    color: #00bfff;
+}
+
+p {
+    color: #ccc;
+}
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+#bio {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+#bio h2 {
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+#bio p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#bio img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+}
+
+#projects {
+    margin: 0;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.project {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #eee;
+    cursor: pointer;
+    transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.project:hover {
+    border: 2px solid #00bfff;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills li {
+    background-color: #4caf50;
+    color: #1e1e1e;
+    padding: 8px 12px;
+    margin: 4px;
+}
+
+footer {
+    background-color: #101018;
+    color: #777;
+    padding: 20px;
+}
+
+footer a {
+    color: #4caf50;
+}
+
+nav {
+    position: fixed; /* Fixed position to make it 'float' */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is above other elements */
+    background-color: rgba(0, 0, 0, 0.2); /* Grey background color for navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for a floating effect */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background color change */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .branding {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #00bfff;
+}
+
+/* Responsive layout adjustments */
+.responsive-layout {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style for clicked project card */
+.project-clicked {
+    border: 2px solid #00bfff;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    body {
+        overflow-y: scroll; /* Enable vertical scroll on smaller screens */
+    }
+}
