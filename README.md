@@ -29,7 +29,7 @@ Navigate through the different sections to learn more about me and my work.
 - Open the `index.html` file in a web browser to view the portfolio.
 
 ### HTML
-'code' 
+``` 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,9 +99,10 @@ Navigate through the different sections to learn more about me and my work.
 
 </body>
 </html>
+```
 
 ### CSS
-
+```
 /* Common styles for all devices */
 body {
     background-color: #1e1e1e;
@@ -276,12 +277,11 @@ nav a:hover {
         overflow-y: scroll; /* Enable vertical scroll on smaller screens */
     }
 }
+```
 
 
 ### Javascript
-
-// script.js
-
+```
 document.addEventListener("DOMContentLoaded", function () {
     // Responsive Design Improvements
     window.addEventListener("resize", function () {
@@ -317,5 +317,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const projectName = card.querySelector("h3").innerText;
     alert(`Details for ${projectName}:\nThis is a placeholder for additional project details.`);
   }
+```
 
 
